@@ -27,6 +27,10 @@ async function onFormSubmit(event) {
   loadMoreBtn.classList.add('visually-hidden');
   clearGallery();
   params.q = event.target.searchQuery.value;
+  if (!params.q) {
+    Notiflix.Notify.failure('Please enter your request!');
+    return;
+  }
   params.page = 1;
   const galleryData = await getGallery();
   if (galleryData.totalHits === 0) {
