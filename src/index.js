@@ -1,7 +1,6 @@
 import Notiflix from 'notiflix';
 import axios from 'axios';
 import SimpleLightbox from 'simplelightbox';
-import InfiniteScroll from 'infinite-scroll';
 import 'simplelightbox/dist/simple-lightbox.min.css';
 import './css/styles.css';
 
